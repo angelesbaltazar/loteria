@@ -1,7 +1,11 @@
 body {
-    background-color: blueviolet;
+    background-color: #198754;
 }
 
 .col {
     border: 1px solid;
+}
+
+.col-2 {
+    border: #131212;
 }
