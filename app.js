@@ -56,20 +56,52 @@ const mazo = [
     
 ]
 
-function rotarImagenes(){
-    let carruselRotar=Math.floor((Math.random()*mazo.length));
-    
-    document.getElementById("carousel-inner").src=mazo[carruselRotar];
-}
-onload =function (){
+const ImgMarcar= [
+    '/img_marcador/check_black.png'
+]
 
-    rotarImagenes();
-    setInterval(rotarImagenes,2000);
-}
+const reverso = 
+  '/img_reverso/0.png'
+
+//function rotarImagenes(){
+  //  let carruselRotar=Math.floor((Math.random()*mazo.length));
+    
+    //document.getElementById("carousel-inner").src=mazo[carruselRotar];
+//}
+//onload =function (){
+
+  //  rotarImagenes();
+   // setInterval(rotarImagenes,2000);
+//}
 
 let contador = 0
 
+
+//function barajear(){
+//      let random_carta = Math.floor(Math.random() * mazo.length);
+    
+//    let selected_image = mazo[random_carta]
+
+ //   document.getElementById("cartas").scr = `./img_loteria/${selected_image}`
+
+//}
+
+
 function siguienteCarta(){
+    
     document.getElementById("cartas").src = mazo[contador];
     contador ++;
+}
+
+//function marcarImagen (){
+//    document.getElementsByClassName("col-2").scr = ImgMarcar;
+//}
+
+
+function marcarCasilla (numCasilla){
+    if (document.getElementById("casilla" + numCasilla).src== document.getElementById("cartas").src){
+        document.getElementById("casilla" + numCasilla).src="/img_marcador/marcador.jpg";
+        console.log(numCasilla);
+    }
+    
 }

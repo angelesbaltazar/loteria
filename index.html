@@ -17,7 +17,7 @@
   </head>
   <header>
     <h1>
-      <div class="alert alert-light" role="alert">
+      <div class="alert alert-info" role="alert">
         Hola bienvenidos al juego de Loteria!, si estas listo da clic en Inicio.
       </div>
       <div id="liveAlertPlaceholder"> </div>
@@ -26,97 +26,100 @@
   </header>
 
   <body>
-    <div class="mazo d-flex  justify-content-evenly  border border-5  border border-success" >
-      <div class="card bg-success border border-success" style="width: 18rem">
-        <img src="/img_loteria/0.png" class="card-img-top  rounded bg-success" alt="..." />
-        <div class="card-body bg-success  border border-5  border border-success ">
-          <a href="#" class="btn btn-warning">Inicio</a>
+    <div class="mazo d-flex justify-content-evenly">
+      <div class="card bg-success" style="width: 18rem">
+        <img src="/img_reverso/0.png" class="card-img-top bg-success" alt="..." />
+        <div class="card-body bg-success">
           <a href="#" class="btn btn-primary">Reiniciar</a>
-          
+          <a href="#" class="btn btn-warning">Inicio</a>
         </div>
       </div>
-      <div class="mazo d-flex  justify-content-evenly  border border-5  border border-success" >
-        <div class="card bg-success border border-success" style="width: 18rem">
-          <img src="/img_loteria/0.png" id="cartas" class="card-img-top  rounded bg-success" alt="..." />
-          <div class="card-body bg-success  border border-5  border border-success ">
-            <a href="#" class="btn btn-warning" onclick="siguienteCarta()>Siguiente</a>
-            
-            
-          </div>
-        </div>
 
-      <!--<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+      <div class="card bg-success" style="width: 18rem">
+        <img src="/img_loteria/1.jpg" id="cartas" class="card-img-top bg-success" alt="..." />
+        <div class="card-body bg-success">
+          <a href="#"  class="btn btn-primary" onclick="siguienteCarta()">Siguiente</a>
+        </div>
+      </div>
+
+      <!-- <div
+        id="carouselExampleSlidesOnly"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
         <div class="carousel-inner" style="width: 18rem">
           <div class="carousel-item active">
-            <img src="/img_loteria/1.jpg" class="d-block w-100" alt="...">
+            <img src="/img_loteria/1.jpg" class="d-block w-100" alt="..." />
           </div>
           <div class="carousel-item">
-            <img src="/img_loteria/10.jpg" class="d-block w-100" alt="...">
+            <img src="/img_loteria/10.jpg" class="d-block w-100" alt="..." />
           </div>
           <div class="carousel-item">
-            <img src="/img_loteria/12.jpg" class="d-block w-100" alt="...">
+            <img src="/img_loteria/11.jpg" class="d-block w-100" alt="..." />
           </div>
-        </div>
-      </div> -->
-      
+        </div> -->
+      </div>
     </div>
+
     
-    <div class="d-flex border border-5  border border-success">
+
+    
+    <div  class="d-flex border border-5  border border-success">
         <div class="contanier">
           <div class="row align-items-start row justify-content-center  row gx-0">
-            <div class="col-2">
-              <img src="/img_loteria/12.jpg" width="100%"  alt="" />
+            <div  class="col-2" >
+              <img src="/img_loteria/12.jpg" id="casilla1" onclick="marcarCasilla(1)" width="100%"  alt="" />
             </div>
             <div class="col-2">
-              <img src="/img_loteria/50.jpg" width="100%" alt="" />
+              <img src="/img_loteria/50.jpg" id="casilla2" onclick="marcarCasilla(2)" width="100%" alt="" />
             </div>
             <div class="col-2">
-              <img src="/img_loteria/3.jpg" width="100%" alt="" />
+              <img src="/img_loteria/3.jpg" id="casilla3" onclick="marcarCasilla(3)" width="100%" alt="" />
             </div>
             <div class="col-2">
-              <img src="/img_loteria/19.jpg" width="100%" alt="" />
+              <img src="/img_loteria/19.jpg" id="casilla4" onclick="marcarCasilla(4)" width="100%" alt="" />
             </div>
           </div>
           <div class="row align-items-start row justify-content-center  row gx-0">
             <div class="col-2">
-              <img src="/img_loteria/18.jpg" width="100%" alt="" />
+              <img src="/img_loteria/18.jpg" id="casilla5" onclick="marcarCasilla(5)" width="100%" alt="" />
             </div>
             <div class="col-2">
-              <img src="/img_loteria/40.jpg" width="100%" alt="" />
+              <img src="/img_loteria/40.jpg" id="casilla6" onclick="marcarCasilla(6)" width="100%" alt="" />
             </div>
             <div class="col-2">
-              <img src="/img_loteria/36.jpg" width="100%" alt="" />
+              <img src="/img_loteria/36.jpg" id="casilla7" onclick="marcarCasilla(7)" width="100%" alt="" />
             </div>
             <div class="col-2">
-              <img src="/img_loteria/51.jpg" width="100%" alt="" />
+              <img src="/img_loteria/51.jpg" id="casilla8" onclick="marcarCasilla(8)" width="100%" alt="" />
             </div>
           </div>
           <div class="row align-items-start row justify-content-center row gx-0">
             <div class="col-2">
-              <img src="/img_loteria/10.jpg" width="100%" alt="" />
+              <img src="/img_loteria/30.jpg" id="casilla9" onclick="marcarCasilla(9)" width="100%" alt="" />
             </div>
             <div class="col-2">
-              <img src="/img_loteria/10.jpg" width="100%" alt="" />
+              <img src="/img_loteria/25.jpg" id="casilla10" onclick="marcarCasilla(10)" width="100%" alt="" />
             </div>
             <div class="col-2">
-              <img src="/img_loteria/10.jpg" width="100%" alt="" />
+              <img src="/img_loteria/48.jpg" id="casilla11" onclick="marcarCasilla(11)" width="100%" alt="" />
             </div>
             <div class="col-2">
-              <img src="/img_loteria/10.jpg" width="100%" alt="" />
+              <img src="/img_loteria/6.jpg" id="casilla12" onclick="marcarCasilla(12)" width="100%" alt="" />
             </div>
           </div>
           <div class="row align-items-start  row justify-content-center row gx-0">
             <div class="col-2">
-              <img src="/img_loteria/10.jpg" width="100%" alt="" />
+              <img src="/img_loteria/3.jpg" id="casilla13" onclick="marcarCasilla(13)" width="100%" alt="" />
             </div>
             <div class="col-2">
-              <img src="/img_loteria/10.jpg" width="100%" alt="" />
+              <img src="/img_loteria/47.jpg" id="casilla14" onclick="marcarCasilla(14)" width="100%" alt="" />
             </div>
             <div class="col-2">
-              <img src="/img_loteria/10.jpg" width="100%" alt="" />
+              <img src="/img_loteria/14.jpg" id="casilla15" onclick="marcarCasilla(15)" width="100%" alt="" />
             </div>
             <div class="col-2">
-              <img src="/img_loteria/10.jpg" width="100%" alt="" />
+              <img src="/img_loteria/42.jpg" id="casilla16" onclick="marcarCasilla(16)" width="100%" alt="" />
             </div>
           </div>
         </div>
@@ -124,58 +127,58 @@
         <div class="contanier">
           <div class="row align-items-start  row justify-content-center row gx-0">
             <div class="col-2">
-              <img src="/img_loteria/10.jpg" width="100%" alt="" />
+              <img src="/img_loteria/1.jpg" id="casilla17" onclick="marcarCasilla(17)" width="100%" alt="" />
             </div>
             <div class="col-2">
-              <img src="/img_loteria/10.jpg" width="100%" alt="" />
+              <img src="/img_loteria/54.jpg" id="casilla18" onclick="marcarCasilla(18)" width="100%" alt="" />
             </div>
             <div class="col-2">
-              <img src="/img_loteria/10.jpg" width="100%" alt="" />
+              <img src="/img_loteria/27.jpg" id="casilla19" onclick="marcarCasilla(19)" width="100%" alt="" />
             </div>
             <div class="col-2">
-              <img src="/img_loteria/10.jpg" width="100%" alt="" />
+              <img src="/img_loteria/10.jpg" id="casilla20" onclick="marcarCasilla(20)" width="100%" alt="" />
             </div>
           </div>
           <div class="row align-items-start row justify-content-center row gx-0">
             <div class="col-2">
-              <img src="/img_loteria/10.jpg" width="100%" alt="" />
+              <img src="/img_loteria/8.jpg" id="casilla21" onclick="marcarCasilla(21)" width="100%" alt="" />
             </div>
             <div class="col-2">
-              <img src="/img_loteria/10.jpg" width="100%" alt="" />
+              <img src="/img_loteria/22.jpg" id="casilla22" onclick="marcarCasilla(22)" width="100%" alt="" />
             </div>
             <div class="col-2">
-              <img src="/img_loteria/10.jpg" width="100%" alt="" />
+              <img src="/img_loteria/43.jpg" id="casilla23" onclick="marcarCasilla(23)" width="100%" alt="" />
             </div>
             <div class="col-2">
-              <img src="/img_loteria/10.jpg" width="100%" alt="" />
-            </div>
-          </div>
-          <div class="row align-items-start row justify-content-center  row gx-0">
-            <div class="col-2">
-              <img src="/img_loteria/10.jpg" width="100%" alt="" />
-            </div>
-            <div class="col-2">
-              <img src="/img_loteria/10.jpg" width="100%" alt="" />
-            </div>
-            <div class="col-2">
-              <img src="/img_loteria/10.jpg" width="100%" alt="" />
-            </div>
-            <div class="col-2">
-              <img src="/img_loteria/10.jpg" width="100%" alt="" />
+              <img src="/img_loteria/15.jpg" id="casilla24" onclick="marcarCasilla(24)" width="100%" alt="" />
             </div>
           </div>
           <div class="row align-items-start row justify-content-center  row gx-0">
             <div class="col-2">
-              <img src="/img_loteria/10.jpg" width="100%" alt="" />
+              <img src="/img_loteria/53.jpg" id="casilla25" onclick="marcarCasilla(25)" width="100%" alt="" />
             </div>
             <div class="col-2">
-              <img src="/img_loteria/10.jpg" width="100%" alt="" />
+              <img src="/img_loteria/39.jpg" id="casilla26" onclick="marcarCasilla(26)" width="100%" alt="" />
             </div>
             <div class="col-2">
-              <img src="/img_loteria/10.jpg" width="100%" alt="" />
+              <img src="/img_loteria/31.jpg" id="casilla27" onclick="marcarCasilla(27)" width="100%" alt="" />
             </div>
             <div class="col-2">
-              <img src="/img_loteria/10.jpg" width="100%" alt="" />
+              <img src="/img_loteria/21.jpg" id="casilla28" onclick="marcarCasilla(28)" width="100%" alt="" />
+            </div>
+          </div>
+          <div class="row align-items-start row justify-content-center  row gx-0">
+            <div class="col-2">
+              <img src="/img_loteria/5.jpg" id="casilla29" onclick="marcarCasilla(29)" width="100%" alt="" />
+            </div>
+            <div class="col-2">
+              <img src="/img_loteria/23.jpg" id="casilla30" onclick="marcarCasilla(30)" width="100%" alt="" />
+            </div>
+            <div class="col-2">
+              <img src="/img_loteria/47.jpg" id="casilla31" onclick="marcarCasilla(31)" width="100%" alt="" />
+            </div>
+            <div class="col-2">
+              <img src="/img_loteria/7.jpg" id="casilla32" onclick="marcarCasilla(32)" width="100%" alt="" />
             </div>
           </div>
         </div>
@@ -183,58 +186,58 @@
         <div class="contanier">
           <div class="row align-items-start row justify-content-center  row gx-0">
             <div class="col-2">
-              <img src="/img_loteria/10.jpg" width="100%" alt="" />
+              <img src="/img_loteria/2.jpg" id="casilla33" onclick="marcarCasilla(33)" width="100%" alt="" />
             </div>
             <div class="col-2">
-              <img src="/img_loteria/10.jpg" width="100%" alt="" />
+              <img src="/img_loteria/44.jpg" id="casilla34" onclick="marcarCasilla(34)" width="100%" alt="" />
             </div>
             <div class="col-2">
-              <img src="/img_loteria/10.jpg" width="100%" alt="" />
+              <img src="/img_loteria/33.jpg" id="casilla35" onclick="marcarCasilla(35)" width="100%" alt="" />
             </div>
             <div class="col-2">
-              <img src="/img_loteria/10.jpg" width="100%" alt="" />
-            </div>
-          </div>
-          <div class="row align-items-start row justify-content-center  row gx-0">
-            <div class="col-2">
-              <img src="/img_loteria/10.jpg" width="100%" alt="" />
-            </div>
-            <div class="col-2">
-              <img src="/img_loteria/10.jpg" width="100%" alt="" />
-            </div>
-            <div class="col-2">
-              <img src="/img_loteria/10.jpg" width="100%" alt="" />
-            </div>
-            <div class="col-2">
-              <img src="/img_loteria/10.jpg" width="100%" alt="" />
+              <img src="/img_loteria/23.jpg" id="casilla36" onclick="marcarCasilla(36)" width="100%" alt="" />
             </div>
           </div>
           <div class="row align-items-start row justify-content-center  row gx-0">
             <div class="col-2">
-              <img src="/img_loteria/10.jpg" width="100%" alt="" />
+              <img src="/img_loteria/11.jpg" id="casilla37" onclick="marcarCasilla(37)" width="100%" alt="" />
             </div>
             <div class="col-2">
-              <img src="/img_loteria/10.jpg" width="100%" alt="" />
+              <img src="/img_loteria/52.jpg" id="casilla38" onclick="marcarCasilla(38)" width="100%" alt="" />
             </div>
             <div class="col-2">
-              <img src="/img_loteria/10.jpg" width="100%" alt="" />
+              <img src="/img_loteria/48.jpg" id="casilla39" onclick="marcarCasilla(39)" width="100%" alt="" />
             </div>
             <div class="col-2">
-              <img src="/img_loteria/10.jpg" width="100%" alt="" />
+              <img src="/img_loteria/37.jpg" id="casilla40" onclick="marcarCasilla(40)" width="100%" alt="" />
+            </div>
+          </div>
+          <div class="row align-items-start row justify-content-center  row gx-0">
+            <div class="col-2">
+              <img src="/img_loteria/25.jpg" id="casilla41" onclick="marcarCasilla(41)"  width="100%" alt="" />
+            </div>
+            <div class="col-2">
+              <img src="/img_loteria/16.jpg" id="casilla42" onclick="marcarCasilla(42)"  width="100%" alt="" />
+            </div>
+            <div class="col-2">
+              <img src="/img_loteria/8.jpg" id="casilla43" onclick="marcarCasilla(43)"  width="100%" alt="" />
+            </div>
+            <div class="col-2">
+              <img src="/img_loteria/5.jpg" id="casilla44" onclick="marcarCasilla(44)"  width="100%" alt="" />
             </div>
           </div>
           <div class="row align-items-startrow justify-content-center  row gx-0">
             <div class="col-2">
-              <img src="/img_loteria/10.jpg" width="100%" alt="" />
+              <img src="/img_loteria/10.jpg" id="casilla45" onclick="marcarCasilla(45)" width="100%" alt="" />
             </div>
             <div class="col-2">
-              <img src="/img_loteria/10.jpg" width="100%" alt="" />
+              <img src="/img_loteria/10.jpg" id="casilla46" onclick="marcarCasilla(46)" width="100%" alt="" />
             </div>
             <div class="col-2">
-              <img src="/img_loteria/10.jpg" width="100%" alt="" />
+              <img src="/img_loteria/10.jpg" id="casilla47" onclick="marcarCasilla(47)" width="100%" alt="" />
             </div>
             <div class="col-2">
-              <img src="/img_loteria/10.jpg" width="100%" alt="" />
+              <img src="/img_loteria/10.jpg" id="casilla48" onclick="marcarCasilla(48)" width="100%" alt="" />
             </div>
           </div>
         </div>
