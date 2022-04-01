@@ -77,25 +77,58 @@ const reverso =
 let contador = 0
 
 
+function siguienteCarta(){
+
+
+    
+    let random_carta = Math.floor(Math.random() * mazo.length);
+    let selected_image = mazo[random_carta]
+
+    document.getElementById("cartas").src = selected_image;
+    contador ++;
+    //return Math.floor(Math.random() * (mazo.length+1));
+
+    
+}
+
+// function siguienteCarta(){
+//     var i,j,k;
+//    for (i = mazo.length; i; i--) {
+//        j = Math.floor(Math.random() * i);
+//        k = myArray[i - 1];
+//         myArray[i - 1] = myArray[j];
+//         myArray[j] = k;
+//     }
+//     document.getElementById("cartas").src = myArray;
+
+// }
+   
+
+
+
+
+
+//const n = 54;
+//constr arr = new mazo(n);
+//for (let i = 0; i < n; i++){
+//    arr[i] =i + 1;
+//}
+
+//arr.sort (() => Math.random() >0.5 ? 1 : -1);
+//const loteria = arr.slice
+//document.getElementById("cartas").src = `./img_loteria/${loteria}`;
+
 //function barajear(){
 //      let random_carta = Math.floor(Math.random() * mazo.length);
     
-//    let selected_image = mazo[random_carta]
+ //   let selected_image = mazo[random_carta]
 
- //   document.getElementById("cartas").scr = `./img_loteria/${selected_image}`
+//   document.getElementById("cartas").scr = `./img_loteria/${selected_image}`
 
 //}
 
 
-function siguienteCarta(){
-    
-    document.getElementById("cartas").src = mazo[contador];
-    contador ++;
-}
 
-//function marcarImagen (){
-//    document.getElementsByClassName("col-2").scr = ImgMarcar;
-//}
 
 
 function marcarCasilla (numCasilla){
